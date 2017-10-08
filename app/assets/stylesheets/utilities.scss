@@ -1,0 +1,56 @@
+dl {
+    &.inline-dl-items {
+        dt,
+        dd {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        dt {
+            width: 200px;
+        }
+        dd {
+            margin-left: 10px;
+        }
+    }
+}
+
+form input,
+form select {
+    padding: 4px 8px;
+    font-size: 1rem;
+    border: 1px solid #999;
+}
+
+form button,
+form input[type=submit] {
+    background: #fff;
+    color: #555;
+    border: 2px solid #555;
+    &:hover,
+    &:focus {
+        background: darken(#fff, 40%);
+        color: #fff;
+    }
+}
+
+.content h1,
+.content .h1 {
+    font-size: 2rem;
+    margin: 10px 0 20px 0;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.form-section {
+    padding: 40px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 3px 5px #000;
+}
+
+.form-center {
+    max-width: 500px;
+    margin: 0 auto;
+}

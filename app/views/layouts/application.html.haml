@@ -8,11 +8,12 @@
     = stylesheet_link_tag "application"
     = javascript_include_tag "application"
   %body
-    %header
+    %header.page-header
       = render 'shared/header'
-    %section.content.clearfix
-      = render 'shared/messages'
-      = yield
-    %footer
-      &copy 2017 Steve Kolock
+    %section.container.main-content
+      %section.content
+        = render 'shared/messages'
+        = yield
+    %footer.container.content
+      = render 'shared/footer'
 

@@ -1,9 +1,13 @@
-%header
-  %nav
-    %ul
-      %li
-        %a Write a Review
-      %li
-        %a Login
-      %li
-        %a Sign Up
+%nav.container.content
+  %ul.top-nav
+    %li= link_to 'Home', root_path
+    %li
+      %a Write a Review
+    - if !current_user
+      %li.align-right= link_to 'Register', register_path, class: "btn btn-primary"
+      %li.align-right= link_to 'Login', sign_in_path
+    - if current_user
+      %li.align-right
+        Hello, #{current_user.full_name}
+        %ul.dropdown-hover
+          %li.align-right= link_to 'Logout', sign_out_path

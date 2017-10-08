@@ -1,0 +1,17 @@
+%section.form-section
+  = form_tag sessions_path, class: "form-center" do
+    %header
+      %h1 Sign in
+    %fieldset
+      %dl.inline-dl-items
+        %dt
+          = label_tag :email, "Email Address"
+        %dd
+          = email_field_tag :email
+        %br
+        %dt
+          = label_tag :password
+        %dd
+          = password_field_tag :password
+    %fieldset.form-group.action
+      %input(type="submit" value="Sign in" class="btn btn-default")
