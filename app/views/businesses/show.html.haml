@@ -1,0 +1,30 @@
+%section.business
+  %h1= @business.name
+  %p= "Located in #{@business.city}, #{@business.state}"
+
+  %section.form-section
+    = form_for [@business, Review.new], class: "form-center" do |f|
+      %header
+        %h2 Add a review
+      %fieldset
+        %dl.inline-dl-items
+          %dt
+            = f.label :title, "Review Title"
+          %dd
+            = f.text_field :title
+          %br
+          %dt
+            = f.label :content, "Review"
+          %dd
+            = f.text_area :content, rows: '4', cols: '80'
+      %fieldset.form-group.action
+        %input(type="submit" value="Add Review" class="btn btn-default")
+
+    %section.reviews-section
+      %h2 Reviews
+      %ul.review-list
+        - @reviews.each do |review|
+          %li
+            %article.review-block
+              %h3.review-block-heading #{review.title}
+              %p #{review.content}

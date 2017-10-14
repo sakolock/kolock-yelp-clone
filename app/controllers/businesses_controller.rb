@@ -19,6 +19,7 @@ class BusinessesController < ApplicationController
   end
 
   def show
+    @reviews = @business.reviews
   end
 
   private

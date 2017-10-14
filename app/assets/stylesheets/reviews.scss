@@ -1,0 +1,18 @@
+.reviews-section {
+    margin-top: 30px;
+}
+
+.review-list {
+    li {
+        list-style: none;
+    }
+}
+
+.review-block {
+    border-top: 1px solid #999;
+    padding: 20px 0;
+    .review-block-heading {
+        font-size: 18px;
+        margin: 10px 0 15px 0;
+    }
+}

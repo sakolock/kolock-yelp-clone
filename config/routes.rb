@@ -8,7 +8,9 @@ Rails.application.routes.draw do
   get 'sign_in', to: 'sessions#new'
   get 'sign_out', to: 'sessions#destroy'
 
-  resources :businesses, except: [:destroy]
+  resources :businesses, only: [:index, :show] do
+    resources :reviews, only: [:create]
+  end
 
   resources :users, only: [:create]
   resources :sessions, only: [:create]

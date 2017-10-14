@@ -4,6 +4,7 @@ dl {
         dd {
             display: inline-block;
             margin-bottom: 10px;
+            vertical-align: top;
         }
         dt {
             width: 200px;
@@ -47,6 +48,7 @@ form input[type=submit] {
 .form-section {
     padding: 40px;
     background: #fff;
+    color: #222;
     border-radius: 4px;
     box-shadow: 0 3px 5px #000;
 }

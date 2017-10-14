@@ -1,6 +1,7 @@
 %nav.container.content
   %ul.top-nav
     %li= link_to 'Home', root_path
+    %li= link_to 'Businesses', businesses_path
     - if !current_user
       %li.align-right.no-border= link_to 'Register', register_path, class: "btn btn-primary"
       %li.align-right= link_to 'Login', sign_in_path
