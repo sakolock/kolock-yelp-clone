@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a basic Yelp clone that focuses on functionality over form. 
 
-Things you may want to cover:
+Highlights:
 
-* Ruby version
+* Built with TDD using Capybara, RSpec
 
-* System dependencies
+* Built with Rails, HTML, SCSS
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* For basic feature use, not for commercial use
