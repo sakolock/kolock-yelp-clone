@@ -13,6 +13,9 @@ header.page-header {
     padding: 5px 0px;
     margin: 15px 10px;
     border-bottom: 2px solid transparent;
+    &.no-border {
+        border: none;
+    }
 }
 
 .align-right {

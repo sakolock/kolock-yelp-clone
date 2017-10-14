@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      redirect_to home_path, notice: "Registration successful!"
+      redirect_to businesses_path, notice: "Registration successful!"
     else
       render :new
     end

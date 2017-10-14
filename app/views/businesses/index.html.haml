@@ -1,0 +1,6 @@
+%section.businesses
+  %h1 Businesses
+  - @businesses.each do |business|
+    %section
+      %h2= link_to business.name, business
+      %p= "#{business.city}, #{business.state}"

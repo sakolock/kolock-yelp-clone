@@ -1,0 +1,22 @@
+%section.form-section
+  = form_tag @business, class: "form-center" do
+    %header
+      %h1 Add a business
+    %fieldset
+      %dl.inline-dl-items
+        %dt
+          = label_tag :name, "Business name"
+        %dd
+          = text_field_tag :name
+        %br
+        %dt
+          = label_tag :city, "City"
+        %dd
+          = text_field_tag :city
+        %br
+        %dt
+          = label_tag :state, "State"
+        %dd
+          = text_field_tag :state
+    %fieldset.form-group.action
+      %input(type="submit" value="Submit" class="btn btn-default")

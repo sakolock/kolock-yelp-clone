@@ -43,6 +43,7 @@ form input[type=submit] {
     text-align: center;
 }
 
+.businesses,
 .form-section {
     padding: 40px;
     background: #fff;
@@ -53,4 +54,36 @@ form input[type=submit] {
 .form-center {
     max-width: 500px;
     margin: 0 auto;
+}
+
+.businesses {
+    section {
+        padding: 20px 10px;
+        &:hover,
+        &:focus {
+            background: #f0f0f0;
+        }
+        +section {
+            border-top: 1px solid #555;
+        }
+    }
+}
+
+.alert {
+    margin: 10px 0;
+    padding: 15px;
+    border-width: 1px;
+    border-style: solid;
+    &.alert-notice {
+        background: palegreen;
+        border-color: darkgreen;
+    }
+    &.alert-error {
+        background: lightcoral;
+        border-color: darkred;
+    }
+    .close {
+        float: right;
+        margin-left: 10px;
+    }
 }

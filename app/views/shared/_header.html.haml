@@ -1,10 +1,8 @@
 %nav.container.content
   %ul.top-nav
     %li= link_to 'Home', root_path
-    %li
-      %a Write a Review
     - if !current_user
-      %li.align-right= link_to 'Register', register_path, class: "btn btn-primary"
+      %li.align-right.no-border= link_to 'Register', register_path, class: "btn btn-primary"
       %li.align-right= link_to 'Login', sign_in_path
     - if current_user
       %li.align-right
