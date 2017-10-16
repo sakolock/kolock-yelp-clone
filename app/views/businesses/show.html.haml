@@ -27,4 +27,6 @@
           %li
             %article.review-block
               %h3.review-block-heading #{review.title}
-              %p #{review.content}
+              %blockquote.review-quote 
+                #{review.content}
+                %cite.review-author #{review.user.full_name}

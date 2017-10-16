@@ -1,6 +1,7 @@
+@import 'components/colors.scss';
 .business {
-    background: #bf1818;
-    color: #fff;
+    background: $main;
+    color: $mainText;
     padding: 10px;
     border-radius: 4px;
 }
