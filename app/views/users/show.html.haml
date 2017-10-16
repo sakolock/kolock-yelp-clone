@@ -1,0 +1,10 @@
+%section.user-profile
+  %h1 #{@user.full_name}'s Profile
+  - if @reviews
+    %section.user-reviews
+      %h2 Reviews by #{@user.full_name}:
+      - @reviews.each do |review|
+        %section.review-block
+          %h3= link_to "#{review.business.name}", business_path(review.business)
+          %h4 #{review.title},  #{review.created_at}
+          %p #{review.content}

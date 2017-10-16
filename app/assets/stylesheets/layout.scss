@@ -17,6 +17,16 @@ html h2 {
     margin: 8px 0 15px;
 }
 
+html h3 {
+    font-size: 1.3rem;
+    margin: 5px 0 10px;
+}
+
+html h4 {
+    font-size: 1.1rem;
+    margin: 5px 0 10px;
+}
+
 .container {
     &:before,
     &:after {

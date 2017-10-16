@@ -17,5 +17,12 @@ feature 'user interacts with reviews' do
   end
 
   scenario 'when not signed in' do
+    business = Fabricate(:business)
+    visit home_path
+    click_link business.name
+
+    expect(page).to have_content business.name
+    expect(page).not_to have_content 'Review Title'
+    expect(page).not_to have_content 'Add Review'
   end
 end

@@ -45,11 +45,13 @@ form input[type=submit] {
 }
 
 .businesses,
-.form-section {
+.form-section,
+.user-profile {
     padding: 40px;
     background: #fff;
     color: #222;
     border-radius: 4px;
+    margin: 15px 0;
     box-shadow: 0 3px 5px #000;
 }
 
