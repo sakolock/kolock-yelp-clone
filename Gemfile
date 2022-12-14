@@ -17,7 +17,7 @@ gem 'rails-controller-testing'
 gem 'turbolinks'
 gem 'rails-html-sanitizer', '~> 1.0.4'
 gem 'nokogiri', '~> 1.10.8'
-gem 'loofah', '~> 2.3.1'
+gem 'loofah', '~> 2.19.1'
 
 group :development do
   gem 'thin'
